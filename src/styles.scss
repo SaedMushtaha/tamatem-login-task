@@ -1,0 +1,34 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$tamatem-style: (
+    50: #EFEFEF,
+    100: #FFFFFF,
+    500: #C3001E,
+    600: #B00020,
+    700: #000000BC,
+    800: #00000099,
+    contrast: (
+    )
+);
+
+$primary-custom: mat.define-palette($tamatem-style, 600);
+$accent-custom: mat.define-palette(mat.$indigo-palette, 500, 300, 700);
+
+$tamatem-login-theme: mat.define-light-theme((
+ color: (
+   primary: $primary-custom,
+   accent: $accent-custom,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($tamatem-login-theme);
+
+
+html, body { 
+  height: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
