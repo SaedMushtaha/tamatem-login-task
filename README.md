@@ -20,7 +20,11 @@ This Angular project implements a responsive login page with Material Design, fe
 - The login page follows the design guidelines provided in the SCSS file.
 - Responsive design ensures optimal viewing experience across various screen sizes.
 - Form validation is implemented for both email and password fields.
-- Asynchronous loading of the logo image with a loading indicator.
+- Asynchronous loading of the logo image.
+
+## Code Comments
+
+Comments have been included throughout the code for better understanding. They provide additional context and explanations for various sections of the application.
 
 ## Testing
 
