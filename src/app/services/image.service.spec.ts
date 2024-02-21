@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { ImageService } from './image.service';
+import {TestBed} from '@angular/core/testing';
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+import {ImageService} from './image.service';
 
 describe('ImageService', () => {
   let service: ImageService;
@@ -31,7 +31,9 @@ describe('ImageService', () => {
       done();
     });
 
-    const req = httpTestingController.expectOne('https://avatars.githubusercontent.com/u/124091983');
+    const req = httpTestingController.expectOne(
+      'https://avatars.githubusercontent.com/u/124091983',
+    );
     expect(req.request.method).toEqual('GET');
     req.flush(mockBlob);
   });

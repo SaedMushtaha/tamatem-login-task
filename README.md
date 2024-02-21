@@ -1,6 +1,13 @@
-# Responsive Login Page
+# Responsive Tamatem Login Page
 
-This Angular project implements a responsive login page with Material Design.
+This Angular project implements a responsive login page with Material Design, featuring a clean and user-friendly interface. The login form is designed with SCSS, and it includes form validation for email and password fields.
+
+## Project Structure
+
+- The `src` folder contains the Angular application source code.
+  - `app` folder: Contains the components, services, and other Angular-related files.
+    - `login` folder: Contains the login component responsible for the login page.
+    - `services` folder: Contains the ImageService used to fetch the logo image.
 
 ## Setup
 
@@ -11,13 +18,33 @@ This Angular project implements a responsive login page with Material Design.
 ## Design Considerations
 
 - The login page follows the design guidelines provided in the SCSS file.
-- Responsive design for different screen sizes is implemented.
-- Form validation is in place for email and password fields.
+- Responsive design ensures optimal viewing experience across various screen sizes.
+- Form validation is implemented for both email and password fields.
+- Asynchronous loading of the logo image with a loading indicator.
+
+## Testing
+
+The project includes testing capabilities. Execute tests using the following command:
+
+```bash
+ng test
+```
+
+## Code Formatting
+
+Prettier is integrated into the project for code formatting. Run the formatter using:
+
+```bash
+npm run format
+```
 
 ## Dependencies
 
 - Angular
 - Angular Material
+- HttpClient (Angular)
+- RxJS
+- Prettier (for code formatting)
 
 ## License
 
